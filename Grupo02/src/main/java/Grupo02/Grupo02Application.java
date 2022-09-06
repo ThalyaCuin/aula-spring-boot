@@ -1,13 +1,12 @@
 package Grupo02;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
-public class Grupo02Application {
-
-	public static void main(String[] args) {
-		SpringApplication.run(Grupo02Application.class, args);
-	}
-
+import org.springframework.boot.SpringApplication; 
+import org.springframework.boot.autoconfigure.SpringBootApplication; 
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder; 
+@SpringBootApplication 
+public class SigxApplication { 
+ public static void main(String[] args) { 
+ SpringApplication.run(SigxApplication.class, args); 
+ System.out.println(new BCryptPasswordEncoder().encode("123")); 
+ } 
 }
